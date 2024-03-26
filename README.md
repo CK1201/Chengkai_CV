@@ -19,13 +19,13 @@ Upload `chicv.typ`, `fontawesome.typ`, `resume.typ` and `fonts/FontAwesome6.otf`
 Assume that you have installed `typst` cli already and it's in your `$PATH`.
 
 ```bash
-git clone https://github.com/matchy233/typst-chi-cv-template.git
-cd typst-chi-cv-template
-typst compile --font-path ./fonts resume.typ resume.pdf
+git clone https://github.com/ck1201/Chengkai_CV.git
+cd Chengkai_CV
+typst compile --font-path ./fonts resume.typ Chengkai_CV.pdf
 ```
 
 ## Sample Output
 
-![Sample output of Chi-CV template](./img/chi-cv-preview.png)
+![Sample output of Chengkai-CV template](./attachment/Chengkai_CV.png)
 
-[PDF file](resume.pdf)
+## See [PDF file](Chengkai_CV.pdf)

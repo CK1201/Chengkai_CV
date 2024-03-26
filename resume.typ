@@ -2,101 +2,115 @@
 
 #show: chicv
 
-= Chi Zhang
+= Chengkai Wu
 
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+#fa[#envelope] #link("mailto:chengkaiwu12@gmail.com")[chengkaiwu12\@gmail.com] |
+#fa[#github] #link("https://github.com/ck1201")[github.com/ck1201] |
+#fa[#user] #link("https://chengkaiwu.me")[chengkaiwu.me] |
+// #fa[#calendar] 1 December 1999 |
+// #fa[#globe] China
+// #fa[#google] #link("https://scholar.google.com/citations?user=7gsdLw4AAAAJ&hl=en")[Google Scholar] |
+// #fa[#linkedin] #link("https://www.linkedin.com/in/congrui-yin-a21314292/")[Congrui Yin]
 
 == Education
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
+  tl: "Harbin Institute of Technology, Shenzhen",
+  tr:  "2022/09 -- 2025/01 (Expected)",
+  bl: "M.Eng in Control Engineering",
+  br: "Shenzhen, China"
 )[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
+  // - School First-Class Academic Scholarship, 2023.
 ]
 #cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
-  bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
+  tl: "Xidian University",
+  tr: "2018/09 -- 2022/06",
+  bl: "B.Eng in Electronic Information Engineering",
+  br: "Xi'an, China"
 )[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
-]
-== Work Experience
-#cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
-  br: "Shanghai, China"
-)[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
+  - GPA: 3.8/4.0, Rank: 1%
+  // - First-Class 2781 Senior Scholarship, 2020. *(1%)*
 ]
 
+// == Research Interests
+// I am broadly interested in the motion planning for mobile robots. My previous work involved developing *efficient real-time whole-body motion planning for mobile manipulators.*
+
+== Publications
+
+  - Real-time Whole-body Motion Planning for Mobile Manipulators Using Environment-adaptive Search and Spatial-temporal Optimization. *Chengkai Wu*$\ ^*$, Ruilin Wang$\ ^*$, Mianzhi Song, Fei Gao, Jie Mei, Boyu Zhou$\ ^dagger$. _2024 IEEE International Conference on Robotics and Automation_ (*ICRA 2024*).
+  // #link("https://ieeexplore.ieee.org/abstract/document/10095864")[[Paper]]
+  - Interaction-Aware Autonomous Exploration with an Eye-in-hand Mobile Manipulator. Mianzhi Song, *Chengkai Wu*, Xinyi Chen, Yichen Zhang, Jinni Zhou, Shaojie Shen, Jie Mei, Boyu Zhou$\ ^dagger$. (In submission). 
+  // #link("https://ieeexplore.ieee.org/abstract/document/10095864")[[Paper under review]]
+
+== Research Experience
+
 #cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
+  tl: "Smart Autonomous Robotics Group - Sun Yat-sen University",
+  tr: "2022/12 -- Present",
+  bl: "Visiting Student, advised by Prof. Boyu Zhou",
+  br: "Zhuhai, China"
 )[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
+  - Designed an environment-adaptive path searching method for mobile manipulators, achieving a higher quality path with reduced computation time compared to _RRT$\ ^*$-Connect_.
+  - Developed a spatial-temporal optimization method to generate smooth, agile, safe, and dynamically feasible trajectories for mobile manipulators, outperforming CHOMP by a factor of approximately 10 in computation time efficiency.
+  - Established a physical platform for mobile manipulators, achieving real-time whole-body trajectory planning within 500ms in indoor scenes containing various obstacles using onboard computer.
+  - Designed a novel representation, called hidden frontier, along with a viewpoint sampling method that together provide suitable perspectives for complete detection of interactable objects, resulting in higher coverage rate.
+  - Proposed a method named Constrained Whole-body Configuration Database, accelerating the acquisition of feasible configurations by about 20 times compared to baseline method given a desired viewpoint.
+  - Published one paper to ICRA 2024 and submitted one paper to IROS 2024.
 ]
 
 #cventry(
-  tl: "PingCAP, Inc.",
-  tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
-  br: "Shanghai, China"
+  tl: "DJI RoboMaster University AI Challenge Competition - Team MAS",
+  tr: "2022/09 -- 2022/11",
+  bl: "Team Leader, advised by Prof. Jie Mei",
+  br: "Shenzhen, China"
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
-]
-
-== Open-Source Contributions
-
-#cventry(
-  tl: "cmu-db/busttub" + " " + iconlink("https://github.com/cmu-db/bustub", icon: github),
-  tr: "2022/08 - Now"
-)[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
-
+  // - Responsible for team management, supervising project progress, and allocating resources to ensure timely completion of competition tasks.
+  - Developed code for drone trajectory planning and SE(3) controller to enable the drone to cross target circles at average speeds exceeding 8m/s in simulation.
+  - Designed and built a physical platform for drones, deployed algorithms, and successfully crossed ten circles within 39 seconds in real-world completion.
+  // - Win the *national second prize*.
 ]
 
 #cventry(
-  tl: "RisingLight Community" + " " + iconlink("https://github.com/risinglightdb", icon: github),
-  tr: "2022/01 - Now",
+  tl: "Field Autonomous System & Computing Lab - Zhejiang University",
+  tr: "2021/07 -- 2021/09",
+  bl: "Research Assistant, advised by Prof. Yanjun Cao",
+  br: "Huzhou, China"
 )[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
+  - Developed algorithms for drone decision-making and path planning, and deployed code onto a physical drone platform.
+  - Designed a user interface for drone operation using ROS Qt.
 ]
 
-#cventry(
-  tl: "TiKV Community" + " " + iconlink("https://github.com/tikv", icon: github),
-  tr: "2020/05 - Now"
-)[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
-]
+// == Open-Source Projects
 
-#cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
-)[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
-]
+// #cventry(
+//   tl: iconlink("https://github.com/SYSU-STAR", text: "Smart Autonomous Robotics Group", icon: github),
+//   tr: "2023/01 - Present"
+// )[
+//   - *Contributor of *#iconlink(icon: github, text: "REMANI-Planner", "https://github.com/SYSU-STAR/REMANI-Planner")* (#fa[#star]17)*. A motion planning method capable of generating high-quality, safe, agile and feasible trajectories for mobile manipulators in real time.
+// ]
 
-#align(right, text(fill: gray)[Last Updated on #today()])
+// #cventry(
+//   tl: "Personal Projects",
+//   tr: "65 followers " + iconlink(text: "ck1201", icon: github, "https://github.com/ck1201")
+// )[
+//   - *#iconlink(icon: github, text: "REMANI-Planner", "https://github.com/SYSU-STAR/REMANI-Planner")* (#fa[#star]17) A motion planning method capable of generating high-quality, safe, agile and feasible trajectories for mobile manipulators in real time.
+// ]
+
+== Honors and Awards
+// I was the leader of Nanchang University Student Cluster Competition Team (#link("https://hpc.ncuscc.tech/")[*Team NCUSCC*]), participating in world's largest supercomputer competition *ASC22* and *SC23.*
+
+*National Second Prize* - RoboMaster 2022-2023 University AI Challenge Competition #h(1fr) Nov. 2022 \
+*Provincial First Prize* - Contemporary Undergraduate Mathematical Contest in Modeling  #h(1fr) Dec. 2020 \
+*First-class Scholarship* #h(1fr) Oct. 2023 \
+*First-Class Senior Scholarship*  #h(1fr) Dec. 2020 \
+// *First-class Scholarship* #h(1fr) Sep. 2020 \
+
+== Technical Skills
+- *Programming Languages:* C/C++(ROS), Python, MATLAB
+- *Tools:* Gazebo, Isaac Sim, Unity, Git, LaTeX, LBFGS, ACADOS
+// - *AI:* 
+//   Natural language Processing (llama-2, ChatGLM-3, CPM-Bee) |
+//   MLSys (Flash attention & ZeRO Series) |
+//   Computer Vision (YOLO Series, OpenCV, Simple Ray Tracing) |
+//   Multimodal Pretrained Model (BLIP-2, LLAVA)
+
+// #align(right, text(fill: gray)[Last Updated on #today()])
