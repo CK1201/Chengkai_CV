@@ -68,6 +68,8 @@
   )
   set par(justify: true)
 
+  show math.equation: set text(font: "Stix Two Math")
+
   body
 }
 
